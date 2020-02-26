@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+    <script>
+    function clrform(){
+      document.getElementById('contactformid').reset();
+    }
+
+    </script>
+  
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href=#>Home</a></li>
+                <li><a href=#>My Projects</a></li>
+                <li><a href=#>Awards</a></li>
+                <li><a href=#>Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="contact-us-text">Get in Touch!</h1>
+    </header>
+    <section class="contact-form contact-box">
+        <div class="contactbox1"> 
+            <h3>Please fill out the form below</h3>
+
+        <form action="/my-handling-form-page" method="post" id= "contactformid">
+            <ul>
+             <li>
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="name">
+             </li>
+             <li>
+               <label for="mail">E-mail:<abbr title="required" aria-label="required">*</abbr></label>
+               <input type="email" id="mail" name="user_mail">
+             </li>
+             <li>
+               <label for="msg">Message:</label>
+               <textarea id="msg" name="user_message" value="Enter your query here"></textarea>
+             </li>
+                  
+             
+            <!-- <li class="submit-button">-->
+              <button class= "submit-button" type="submit">Send your message</button>
+            
+            <!--<li class="clear-button">-->
+                <button type="button" class="clear-button" onclick= "clrform();">Clear form</button>
+              
+            </ul>
+
+  
+            </form>
+            </div>
+
+
+            <div class="contactbox2 sign-in">
+                <h4>Returning User? Sign in below</h4>
+                <form action="/my-signin-form-page" method="post">
+        
+                    <ul>
+                     <li>
+                       <label for="user-name">Username:<abbr title="required" aria-label="required">*</abbr></label>
+                       <input type="text" id="user-name" name="user-name">
+                     </li>
+                     <li>
+                       <label for="pwd">Password:<abbr title="required" aria-label="required">*</abbr></label>
+                       <input type="password" id="pwd" name="password">
+                     </li>
+                    </ul>
+                    <button class="signin-button" type="submit">Sign in</button>
+
+            </div>
+
+            <div class="contactbox3 call-us">
+                <h4>Did you know?</h4>
+                For a more urgent enquiry, you can call us on our toll free number:<br><strong>0300 78601*</strong><div class=""><sub>*Lines are open 24 hours, 7 days a week!</sub> 
+            </div>
+    </section>
+
+
+    <footer class="main-footer">
+      <div class="container main-footer-container">
+      <h3 class= "about-me-bottom"> &copy; 2020 (Click GitHub)</h3>
+      <form class="subscribe-bar" ><!--aria? -->
+          <label>
+              <span>Want to hear from me?</span>
+              <input type="search" placeholder="Enter email here">
+          </label>
+          <button class="but" type="submit" ><span>Subscribe!</span></button>
+      </form>
+      <ul class="nav footer-nav">
+     <li><a href="https://github.com/SanMasood?tab=repositories" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-512.png" alt="github-icon" height="50" width="50"></a></li>
+     
+     <li><a href="#"><img src="https://cdn3.iconfinder.com/data/icons/social-media-circle/512/circle-twitter-512.png" alt="twitter-icon" height="50" width="50"></a></li>
+
+     <li><a href="#"><img src="https://img.icons8.com/ultraviolet/40/000000/facebook-new.png" alt="facebook-icon" height="50" width="50"></a></li>
+
+     <li><a href="#"><img src="https://cdn.fastly.picmonkey.com/static/9dfa2a76aacaf0e4e0af92b3c07e1241/69781/icons_youtube_04_preview.png" alt="youtube-icon" height="50" width="50"></a></li>
+
+     <li><a href="#" ><img src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png?w=300" alt="instagram-icon" ></a></li>
+
+      <li><a href="#"><img src="https://image.flaticon.com/icons/png/512/145/145807.png" alt="linkedin-icon" ></a></li>
+      </ul>
+  </div>
+  </footer>
+    
+</body>
+</html>
