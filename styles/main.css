@@ -78,6 +78,7 @@ html,body, .container{
    /* width: 65px;*/
     width: 65%;/*NOT 100% IT SHOULD BE*/ 
     height: 15%;
+    box-shadow: 10px 10px 20px rgb(1, 100, 67);
 }
 
 .aboutbox{
@@ -99,6 +100,7 @@ margin: auto;
     border-radius: 10px;
     font-family: EB Garamond;
     font-size: 120%;
+    box-shadow: 0 0 10px rgb(90, 223, 156);
     
 }
 
