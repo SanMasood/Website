@@ -50,7 +50,7 @@ html,body, .container{
     width:100%;
 }
 
-.about-me{
+.about-me, .contact-us-text{
     text-align: center;
     color: rgb(100, 100, 104); /*rgba(130, 248, 189, 0.226);*/
     margin: 0;
@@ -143,7 +143,7 @@ hr{
     border: 1px dashed rgb(177, 222, 243);
     margin-bottom: 2em;    
 }
-
+/*-------------------------------------------FOOTER-------------------------------------*/
 .main-footer{
     background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     color: whitesmoke;
@@ -182,6 +182,7 @@ hr{
   .but:hover {
     background: #ff76e1;
   }
+  /*-------------------------------CONTACT PAGE-------------------------------------*/
   .contact-box{
     display: grid;
    /*border: solid green;*/
@@ -199,11 +200,12 @@ hr{
     margin-left: 15%;
     
 }
-
+/*
 .contact-us-text{
     text-align: center;
     margin-top: 2%;
-}
+    font-size: 50px;
+}*/
 
 .contact-box > div{
 background-color: rgba(130, 248, 189, 0.137);
@@ -351,3 +353,188 @@ button{
     }
    
 }
+/*-------------------HOME PAGE----------------------------------*/
+.homebody{
+    margin: 0;
+    background-image: linear-gradient(to bottom, rgba(203, 247, 250, 0.2), rgba(236, 245, 242, 0.589));
+    font-family: Cardo, monospace;
+    
+}
+
+.homecontainer{
+    width: 100%;
+    background-color: rgba(46, 190, 171, 0.651);
+    padding: 10px;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.homenav ul{
+    margin: 0;
+    background-color: rgba(79, 221, 197, 0.658);
+    padding-bottom: 5px;
+}
+
+.homenav li{
+    display: inline;
+}
+
+.homenav a{
+    display: inline-block;
+    padding: .9em;
+    color: white;
+    text-decoration: none;
+}
+
+.homenav a:hover{
+    background-color: rgba(191, 248, 240, 0.521);
+    border-radius: 5px;
+}
+
+.homenav{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: lighter;
+    /*border-bottom: 1px solid rgb(200, 218, 209);*/
+}
+
+.homenav li{
+    padding: 0 5%; /*puts spaces between all <li> */
+}
+
+.homesection{
+    position: relative;
+    display: inline-block; /* Make the width of box same as image */
+  
+}
+.homesection .homebox{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 7%; /* Adjust this value to move the positioned div up and down */
+    width: 90%; /* Set the width of the positioned div */
+
+    background-size: cover;
+}
+.homemainphoto{
+    width:100%;
+    height: 60%;
+    margin-top: .5em; 
+
+}
+.homeh1{
+    background-color: rgba(255, 255, 255, 0.877);
+    border-radius: 15px;
+    height: 300px;
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Jacques Francois Shadow';
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 2.1em;
+    font-size: 50px;
+    color: rgba(75, 111, 122, 0.589);
+ 
+}
+    .homebox{
+    margin: 0 auto;
+    text-align: center;
+  /*  padding-top: -3em;*/
+    }
+
+    /*------------------------desiging cards underneath----------------------*/
+
+.cardbox{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    background: inherit;
+    grid-auto-rows: minmax(50px, auto);
+    grid-auto-columns: minmax(100px, 60%);
+    width: 90%;
+    padding: 4em; 
+    margin: auto;   /*aligns all 3 card boxes in center*/ 
+}
+
+.cardbox > div{
+    background: #eee;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    font-family: EB Garamond;
+    font-size: 120%;
+    box-shadow: 0 0 10px rgb(90, 223, 156);
+    
+}
+
+.cardbox > div:nth-child(odd) {
+    background: rgba(251, 253, 190, 0.733);
+   /* font-family: 'Dancing Script';
+    font-size: 120%;
+    text-align: center;*/
+
+}
+
+.flowerbox > * {
+    min-width: 40%;
+    max-width: auto;
+}
+/*
+.cardbox > .flowerbox:hover{
+    box-shadow: 10px 20px 30px rgb(255, 247, 255);
+
+}*/
+.flower-photo{
+    height: 150px;
+    max-width: 250px; 
+    max-height: auto;
+}
+.flip-container {
+	perspective: 1000px;
+}
+    /* flip the pane when hovered */
+    
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+/*
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}*/
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	/*position: relative;*/
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+/*	position: absolute;
+	top: 0;
+	left: 0; */
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    margin: auto;
+
+}
+
